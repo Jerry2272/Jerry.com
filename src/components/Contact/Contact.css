@@ -1,0 +1,53 @@
+.contact{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contact .contactContent{
+    width: 600px;
+    margin: auto;
+}
+
+.contact h1{
+    font-size: 42px;
+}
+.contact h1 span{
+color: #0057ff;
+}
+
+.connect {
+    animation: rotate 0.45s infinite ease;
+}
+
+
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+form input, textarea{
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    background: transparent;
+    border: 0.5px solid gray;
+    color: #fff;
+    margin-bottom: 25px;
+}
+button{
+    background-color: #0057ff;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 30px;
+    height: 42px;
+    cursor: pointer;
+}
