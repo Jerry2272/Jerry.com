@@ -1,19 +1,24 @@
 {
   "files": {
-    "main.css": "/Jerry.com/static/css/main.5bdfd326.css",
-    "main.js": "/Jerry.com/static/js/main.43cb932b.js",
+    "main.css": "/Jerry.com/static/css/main.71ec0a51.css",
+    "main.js": "/Jerry.com/static/js/main.9ca6c7b5.js",
     "static/js/453.acca0757.chunk.js": "/Jerry.com/static/js/453.acca0757.chunk.js",
     "static/media/Iccef_programme.png": "/Jerry.com/static/media/Iccef_programme.af30639c04afb845631c.png",
+    "static/media/reis.png": "/Jerry.com/static/media/reis.44834acc36d33c5524ec.png",
+    "static/media/speech.PNG": "/Jerry.com/static/media/speech.044d1bdac554015bc936.PNG",
+    "static/media/ecommerce.PNG": "/Jerry.com/static/media/ecommerce.b746edf12991e2c15f6d.PNG",
+    "static/media/search.PNG": "/Jerry.com/static/media/search.109abc09ec5603672447.PNG",
     "static/media/jerry3.png": "/Jerry.com/static/media/jerry3.33b5d0009ce40a36e94c.png",
+    "static/media/top.png": "/Jerry.com/static/media/top.b00aacac708a323bcef5.png",
     "static/media/service-bg.png": "/Jerry.com/static/media/service-bg.a31e2c19afaae42389d5.png",
     "static/media/hr-ln.png": "/Jerry.com/static/media/hr-ln.6f648f5309e6c75fffde.png",
     "index.html": "/Jerry.com/index.html",
-    "main.5bdfd326.css.map": "/Jerry.com/static/css/main.5bdfd326.css.map",
-    "main.43cb932b.js.map": "/Jerry.com/static/js/main.43cb932b.js.map",
+    "main.71ec0a51.css.map": "/Jerry.com/static/css/main.71ec0a51.css.map",
+    "main.9ca6c7b5.js.map": "/Jerry.com/static/js/main.9ca6c7b5.js.map",
     "453.acca0757.chunk.js.map": "/Jerry.com/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bdfd326.css",
-    "static/js/main.43cb932b.js"
+    "static/css/main.71ec0a51.css",
+    "static/js/main.9ca6c7b5.js"
   ]
 }
