@@ -25,12 +25,12 @@ nav ul{
     justify-content: space-between;
     list-style: none;
 }
-nav ul .navLink{
+nav ul .nav-link{
     margin-left: 30px;
     text-decoration: none;
     color: white;
 }
-nav ul .navLink a{
+nav ul .nav-link{
     color: #fff;
     text-decoration: none;
 }

@@ -1,6 +1,12 @@
 import React from 'react'
 import './Portfolio.css'
 import Iccef from '../../assets/Iccef_programme.png'
+import Ecom from '../../assets/ecommerce.PNG'
+import Search from '../../assets/search.PNG'
+import Speech from '../../assets/speech.PNG'
+import Top from '../../assets/top.png'
+import Reis from '../../assets/reis.png'
+import { Link } from 'react-router-dom'
 
 
 function Porfolio() {
@@ -11,35 +17,90 @@ function Porfolio() {
             <div className="content">
                     <div className="item">
                     <div className="itemImg">
-                    <img src={Iccef} alt=""  />
+                    <img src={Ecom} alt=""  />
                     </div>
-                    <h4 class="text-white my-3">Iccef Programme</h4>
-                    </div>
-                    <div className="item">
-                    <div className="itemImg">
-                    <img src={Iccef} alt=""  />
-                    </div>
-                    <h4 class="text-white my-3">Iccef Programme</h4>
-                    </div>
-                    <div className="item">
-                    <div className="itemImg">
-                    <img src={Iccef} alt=""  />
-                    </div>
-                    <h4 class="text-white my-3">Iccef Programme</h4>
+                      <div className="itemOverlay">
+                      <Link className="link" to=" https://jerry2272.github.io/jerryshoppingmoore">
+                        View Site
+                      </Link>
+                      <Link className="link" to="https://github.com/Jerry2272/reis-landing-page.ioo">
+                        View Code
+                      </Link>
+                </div> 
+                    <h4>Ecommerce Shopping Site</h4>
                     </div>
                     <div className="item">
                     <div className="itemImg">
                     <img src={Iccef} alt=""  />
                     </div>
-                    <h4 class="text-white my-3">Iccef Programme</h4>
+                    <div className="itemOverlay">
+                      <Link className="link" to="https://jerry2272.github.io/iccef_programme.github/">
+                        View Site
+                      </Link>
+                      <Link className="link" to="https://jerry2272.github.io/iccef_programme.github/">
+                        View Code
+                      </Link>
+                </div> 
+                    <h4 className="text-white my-3">Iccef Programme</h4>
                     </div>
                     <div className="item">
                     <div className="itemImg">
-                    <img src={Iccef} alt=""  />
+                    <img src={Search} alt=""  />
                     </div>
-                    <h4 class="text-white my-3">Iccef Programme</h4>
+                    <div className="itemOverlay">
+                      <Link className="link" to=" https://jerry2272.github.io/search-images.api/">
+                        View Site
+                      </Link>
+                      <Link className="link" to="https://github.com/Jerry2272/www.top_temlate.github.ioo">
+                        View Code
+                      </Link>
+                </div> 
+                    <h4 className="text-white my-3">Search Image Website</h4>
+                    </div>
+                    <div className="item">
+                    <div className="itemImg">
+                    <img src={Speech} alt=""  />
+                    </div>
+                    <div className="itemOverlay">
+                      <Link className="link" to=" https://jerry2272.github.io/speechConverter">
+                        View Site
+                      </Link>
+                      <Link className="link" to="https://github.com/Jerry2272/www.top_temlate.github.ioo">
+                        View Code
+                      </Link>
+                </div> 
+                    <h4 className="text-white my-3">Tex Converter</h4>
+                    </div>
+                    <div className="item">
+                    <div className="itemImg">
+                    <img src={Top} alt=""  />
+                    </div>
+                    <div className="itemOverlay">
+                      <Link className="link" to=" https://jerry2272.github.io/www.top_temlate.github.io">
+                        View Site
+                      </Link>
+                      <Link className="link" to="https://github.com/Jerry2272/www.top_temlate.github.ioo">
+                        View Code
+                      </Link>
+                </div> 
+                    <h4 className="">Top Designing</h4>
+                    </div>
+                    <div className="item">
+                    <div className="itemImg">
+                    <img src={Reis} alt=""  />
+                    </div>
+                    <div className="itemOverlay">
+                      <Link className="link" to=" https://jerry2272.github.io/reis-landing-page.io/">
+                        View Site
+                      </Link>
+                      <Link className="link" to="https://github.com/Jerry2272/reis-landing-page.ioo">
+                        View Code
+                      </Link>
+                </div> 
+                    <h4 className="text-white my-3">Real Housing Estate</h4>
                     </div>
             </div>
+            <Link to="https://github.com/Jerry2272?tab=repositories">Visit Github</Link>
         </div>
     </div>
   )

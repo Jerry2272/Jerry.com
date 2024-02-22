@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaEnvelope, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaEnvelope, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -9,13 +10,21 @@ function Footer() {
             <h1>Let Get To Know Each Other</h1> 
             <h4>I am  always open to discuss your projects | Ideas by turning them into realities. Stay connected with Jerry Jakes through my social media handles!</h4>
             <div className="footerIcon">
-                <a href="/"><FaTwitter /></a>
-                <a href="/"><FaLinkedin /></a>
-                <a href="/"><FaInstagram /></a>
-                <a href="/"><FaWhatsapp /></a>
-                <a href="/"><FaEnvelope /></a>
-                <a href="/"><FaFacebook /></a>
-                <a href="/"><FaGithub /></a>
+                <Link to="https://twitter.com/JerryAtebe?t=a4UOyewZuoB-lehKkeu8kw&s=09">
+                  <FaTwitter />
+                  </Link>
+                <Link><FaLinkedinIn /></Link>
+                <Link to="https://www.instagram.com/jerryjake33/">
+                <FaInstagram />
+                </Link>
+                <Link to="https://wa.me/09161729605"><FaWhatsapp /></Link>
+                <Link to="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                    <FaEnvelope />
+                </Link>
+                <Link to="https://www.facebook.com/profile.php?id=100089627465352"><FaFacebookF /></Link>
+                <Link to="https://github.com/Jerry2272?tab=repositories">
+                <FaGithub />
+                </Link>
             </div>
             <h5>Created by <b>Jerry Jakes</b> | 2024 | All Reserved!</h5>
          </div>     

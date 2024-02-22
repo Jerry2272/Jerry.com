@@ -1,6 +1,7 @@
 import React from 'react'
 import './AboutMe.css'
-import { FaFacebookF, FaGithub, FaHandPointRight, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import { FaFacebookF, FaLinkedinIn,FaEnvelope, FaGithub, FaHandPointRight, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 // import myImg from '../../assets/jerry4.jpg'
 
 function AboutMe() {
@@ -19,12 +20,21 @@ function AboutMe() {
            <div className="icon">
             <FaHandPointRight className='handPoint' />
           <ul>
-           <a href='/'><FaGithub /></ a>
-            <a href='/'><FaLinkedinIn /></a>
-            <a href='/'><FaFacebookF /></a>
-            <a href='/'><FaTwitter /></a>
-            <a href='/'><FaInstagram /></a>
-            <a href='/'><FaWhatsapp /></a>
+          <Link to="https://twitter.com/JerryAtebe?t=a4UOyewZuoB-lehKkeu8kw&s=09">
+                  <FaTwitter />
+                  </Link>
+                <Link><FaLinkedinIn /></Link>
+                <Link to="https://www.instagram.com/jerryjake33/">
+                <FaInstagram />
+                </Link>
+                <Link to="https://wa.me/09161729605"><FaWhatsapp /></Link>
+                <Link to="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                    <FaEnvelope />
+                </Link>
+                <Link to="https://www.facebook.com/profile.php?id=100089627465352"><FaFacebookF /></Link>
+                <Link to="https://github.com/Jerry2272?tab=repositories">
+                <FaGithub /> 
+                </Link>
           </ul>
            </div>
         </div>
