@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <div className="container">
-        <h4><i>JerryJakes</i></h4>
+        {/* <h4><i>JerryJakes</i></h4> */}
         <nav>
           <ul className="menu-hide">
             <li>
