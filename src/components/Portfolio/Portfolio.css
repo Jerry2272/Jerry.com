@@ -12,6 +12,19 @@
 }
 .portfolio  h2 b{
  text-transform: capitalize;
+ color: #0057ff;
+}
+.portfolio h2{
+    position: relative;
+}
+.portfolio h2::before{
+    content: '';
+    height: 3px;
+    width: 200px;
+    background: #0057ff;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
 }
 .content{
     display: flex;
@@ -28,7 +41,7 @@
 }
 .content .item .itemOverlay{
     position: absolute;
-    background:linear-gradient(to right ,rgba(15, 4, 82, 0.80),rgb(62, 224, 207));
+    background: radial-gradient(rgba(37, 6, 45, 0.57) ,rgba(11, 1, 14,1) );
     width: 100%;
     font-size: 15px;
     inset: 0;
@@ -36,18 +49,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 0;
-    opacity: 0;
+    height: 100%;
     cursor: pointer;
     transition: all 0.4s;
 }
+#light .content .item .itemOverlay{
+    background: radial-gradient(rgba(217, 202, 222, 0.67) ,rgba(203, 198, 205,1) );
+}
 .content .item:hover .itemOverlay{
-    height: 100%;
-    opacity: 1;
+    height: 0;
 }
 .content .item .itemOverlay .link{
     color: white;
     border: 1px solid #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: auto 20px;
+    display: none;
+}
+.content .item:hover .itemOverlay .link{
+    display: block;
+}
+#light .content .item .itemOverlay .link{
+    color: black;
+    border: 2px solid #000;
     text-decoration: none;
     padding: 10px;
     margin: auto 10px;
@@ -56,7 +81,7 @@
     width: 300px;
     height: 300px;
     overflow: hidden;
-    margin: 48px 10px 5px;
+    margin: 52px 10px 5px;
 }
 .content .itemImg img{
     width: 100%;

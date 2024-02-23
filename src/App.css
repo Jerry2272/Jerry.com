@@ -21,11 +21,12 @@
 #light{
   background: radial-gradient(#d9cade ,#cbc6cd );
   color: black;
+  font-family:Baskerville Old Face ;
   /* transition: all 3s ease; */
 }
 #dark{
   background: radial-gradient(#25062d ,#0b010e );
-  color: white;
+  color: white!important;
   /* transition: all 3s ease; */
 }
 .state{

@@ -5,7 +5,7 @@ import { FaBootstrap, FaCodiepie, FaCss3, FaFigma, FaGit, FaGithub, FaHtml5, FaJ
 function Skills() {
   return (
     <div className='skills' id='skill'>
-        <h1>Technical ToolBar<FaTools /></h1>
+        <h1>Technical <span>ToolBar</span><FaTools /></h1>
         <div className="skillsTools">
             <div className="skillBox">
                 <FaHtml5 className="fa" />

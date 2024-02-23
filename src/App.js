@@ -39,6 +39,7 @@ const modeToggle = () =>{
       }
         </ContextApi.Provider>
       </header>
+      <ContextApi.Provider value={{theme}}>
    <Navbar />
    <Hero />
    <AboutMe />
@@ -47,6 +48,7 @@ const modeToggle = () =>{
    <Porfolio />
    <Contact />
    <Footer/>
+   </ContextApi.Provider>
     </div>
    </ BrowserRouter>
   )

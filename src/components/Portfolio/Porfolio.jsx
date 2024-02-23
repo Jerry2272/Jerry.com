@@ -20,9 +20,8 @@ function Porfolio() {
                     <img src={Ecom} alt=""  />
                     </div>
                       <div className="itemOverlay">
-                      <Link className="link" to=" https://jerry2272.github.io/jerryshoppingmoore">
-                        View Site
-                      </Link>
+                        
+                        <a href="https://jerry2272.github.io/jerryshoppingmoore" className="link">View Site</a>
                       <Link className="link" to="https://github.com/Jerry2272/reis-landing-page.ioo">
                         View Code
                       </Link>
@@ -48,9 +47,7 @@ function Porfolio() {
                     <img src={Search} alt=""  />
                     </div>
                     <div className="itemOverlay">
-                      <Link className="link" to=" https://jerry2272.github.io/search-images.api/">
-                        View Site
-                      </Link>
+                      <a href="https://jerry2272.github.io/search-images.api/"  className="link"> View Site</a>
                       <Link className="link" to="https://github.com/Jerry2272/www.top_temlate.github.ioo">
                         View Code
                       </Link>
@@ -62,9 +59,7 @@ function Porfolio() {
                     <img src={Speech} alt=""  />
                     </div>
                     <div className="itemOverlay">
-                      <Link className="link" to=" https://jerry2272.github.io/speechConverter">
-                        View Site
-                      </Link>
+                      <a href="https://jerry2272.github.io/speechConverter" className="link"> View Site</a>
                       <Link className="link" to="https://github.com/Jerry2272/www.top_temlate.github.ioo">
                         View Code
                       </Link>
@@ -76,9 +71,7 @@ function Porfolio() {
                     <img src={Top} alt=""  />
                     </div>
                     <div className="itemOverlay">
-                      <Link className="link" to=" https://jerry2272.github.io/www.top_temlate.github.io">
-                        View Site
-                      </Link>
+                      <a href=" https://jerry2272.github.io/www.top_temlate.github.io" className="link">View Site</a>
                       <Link className="link" to="https://github.com/Jerry2272/www.top_temlate.github.ioo">
                         View Code
                       </Link>
@@ -90,9 +83,7 @@ function Porfolio() {
                     <img src={Reis} alt=""  />
                     </div>
                     <div className="itemOverlay">
-                      <Link className="link" to=" https://jerry2272.github.io/reis-landing-page.io/">
-                        View Site
-                      </Link>
+                      <a href=" https://jerry2272.github.io/reis-landing-page.io/" className="link">View Site</a>
                       <Link className="link" to="https://github.com/Jerry2272/reis-landing-page.ioo">
                         View Code
                       </Link>

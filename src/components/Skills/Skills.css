@@ -2,6 +2,21 @@
     width: 100%;
     height: auto;
 }
+.skills  h1{
+    position: relative;
+}
+.skills h1 span {
+    color: #0057ff;
+}
+.skills  h1::before{
+    content: '';
+    height: 3px;
+    width: 200px;
+    background: #0057ff;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+}
 .skillsTools{
     display: flex;
     flex-wrap: wrap;
@@ -22,4 +37,7 @@
 }
 .skillBox .fa{
     scale: 3;
+}
+#light .skillBox{
+    background: radial-gradient(#d9cade ,#cbc6cd );
 }

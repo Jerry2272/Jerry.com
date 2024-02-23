@@ -3,19 +3,22 @@
     background-position: 10%;
     background-repeat: repeat;
     background-attachment: fixed;
-    height: 430px;
+    height: 450px;
     width: 100%;
     margin: 0;
     display: flex;
     align-items: center;
     padding: 40px 0;
 }
-
-.aboutContent{
+#dark .aboutContent{
     height: 100%;
     margin-left: auto;
     background: radial-gradient(#25062d ,#0b010e );
 }
+#light .aboutContent{
+    background: radial-gradient(#d9cade ,#cbc6cd );
+}
+
 .aboutContent h1{
     position: relative;
 }
@@ -44,6 +47,9 @@ font-weight: 600;
 .icon ul a{
    margin-left: 25px;
    color: #fff;
+}
+#light .icon ul a{
+    color: #0b010e;
 }
 .handPoint{
     font-size: 43px;

@@ -6,7 +6,7 @@ function Services() {
   return (
     <div className='service' id='service'>
     <div className="serviceText">
-        <h1>What I Offer</h1>
+        <h1>What I  <span> Offer</span></h1>
         <div className="serviceContainer">
             <div className="serviceContent">
                 <FaCodepen />

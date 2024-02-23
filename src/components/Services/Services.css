@@ -16,7 +16,25 @@
  height: 100px;
  display: flex;
  align-items: end;
+ position: relative;
  justify-content: center;
+}
+.serviceText h1 span {
+    color: #0057ff;
+}
+.serviceText  h1::before{
+    content: '';
+    height: 3px;
+    width: 100px;
+    background: #0057ff;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-40px);
+}
+#light .serviceText h1{
+    background: linear-gradient(rgba(217, 202, 222,0.65), rgba(203, 198, 205,1)), url('../../assets/service-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -25,9 +43,16 @@
     width: 300px;
     height: auto;
     margin: 30px 10px;
-    box-shadow: 2px 4px 10px 10px #25062d;
+    box-shadow: 2px 4px 10px 7px #25062d;
     padding: 20px 8px;
 }
+#light .serviceContent{
+    box-shadow: 2px 4px 10px 7px gray;
+}
+.serviceContent h4{
+    padding: 10px 0;
+}
 .serviceContent p{
-    font-size: 14px;
+    font-size: 15px;
+    padding: 20px 0;
 }
