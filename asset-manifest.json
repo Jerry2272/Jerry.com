@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Jerry.com/static/css/main.71ec0a51.css",
-    "main.js": "/Jerry.com/static/js/main.9ca6c7b5.js",
+    "main.css": "/Jerry.com/static/css/main.04f98fe4.css",
+    "main.js": "/Jerry.com/static/js/main.ca04c2a0.js",
     "static/js/453.acca0757.chunk.js": "/Jerry.com/static/js/453.acca0757.chunk.js",
     "static/media/Iccef_programme.png": "/Jerry.com/static/media/Iccef_programme.af30639c04afb845631c.png",
     "static/media/reis.png": "/Jerry.com/static/media/reis.44834acc36d33c5524ec.png",
@@ -13,12 +13,12 @@
     "static/media/service-bg.png": "/Jerry.com/static/media/service-bg.a31e2c19afaae42389d5.png",
     "static/media/hr-ln.png": "/Jerry.com/static/media/hr-ln.6f648f5309e6c75fffde.png",
     "index.html": "/Jerry.com/index.html",
-    "main.71ec0a51.css.map": "/Jerry.com/static/css/main.71ec0a51.css.map",
-    "main.9ca6c7b5.js.map": "/Jerry.com/static/js/main.9ca6c7b5.js.map",
+    "main.04f98fe4.css.map": "/Jerry.com/static/css/main.04f98fe4.css.map",
+    "main.ca04c2a0.js.map": "/Jerry.com/static/js/main.ca04c2a0.js.map",
     "453.acca0757.chunk.js.map": "/Jerry.com/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.71ec0a51.css",
-    "static/js/main.9ca6c7b5.js"
+    "static/css/main.04f98fe4.css",
+    "static/js/main.ca04c2a0.js"
   ]
 }
