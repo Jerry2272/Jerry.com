@@ -13,7 +13,7 @@
 #dark .aboutContent{
     height: 100%;
     margin-left: auto;
-    background: radial-gradient(#25062d ,#0b010e );
+    background: #000;
 }
 #light .aboutContent{
     background: radial-gradient(#d9cade ,#cbc6cd );

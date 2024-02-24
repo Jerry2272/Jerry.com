@@ -54,7 +54,7 @@
     transition: all 0.4s;
 }
 #light .content .item .itemOverlay{
-    background: radial-gradient(rgba(217, 202, 222, 0.67) ,rgba(203, 198, 205,1) );
+    background: radial-gradient(rgba(217, 202, 222, 0.47) ,rgba(203, 198, 205,1) );
 }
 .content .item:hover .itemOverlay{
     height: 0;

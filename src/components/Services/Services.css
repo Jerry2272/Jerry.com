@@ -9,7 +9,7 @@
     flex-wrap: wrap;
 }
 .serviceText h1{
- background: linear-gradient(rgba(37, 6, 45,0.65) ,rgba(11, 1, 14,1) ), url('../../assets/service-bg.png');
+ background: linear-gradient(rgba(0, 0, 0,0.67),rgba(0, 0, 0,1) ), url('../../assets/service-bg.png');
  background-repeat: no-repeat;
  background-position: center;
  margin-top: auto;
@@ -42,8 +42,8 @@
 .serviceContent{
     width: 300px;
     height: auto;
-    margin: 30px 10px;
-    box-shadow: 2px 4px 10px 7px #25062d;
+    margin: 30px auto;
+    box-shadow: 2px 2px 4px 6px gray;
     padding: 20px 8px;
 }
 #light .serviceContent{

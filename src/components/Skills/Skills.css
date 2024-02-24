@@ -32,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  background: radial-gradient(#25062d ,#0b010e );
+  background: #000;
   margin: 30px auto;
 }
 .skillBox .fa{
