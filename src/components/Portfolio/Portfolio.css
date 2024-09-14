@@ -88,3 +88,11 @@
     height: 100%;
     filter: grayscale(12px);
 }
+
+
+
+@media (min-width: 992px) {
+    .content{
+        padding: 5em;
+    }
+}

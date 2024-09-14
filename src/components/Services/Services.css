@@ -56,3 +56,11 @@
     font-size: 15px;
     padding: 20px 0;
 }
+
+
+
+@media (min-width: 992px) {
+    .serviceContainer{
+        padding: 8em;
+    }
+}

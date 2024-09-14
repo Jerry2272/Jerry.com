@@ -4,12 +4,17 @@ import Iccef from '../../assets/Iccef_programme.png'
 import Ecom from '../../assets/ecommerce.PNG'
 import Search from '../../assets/search.PNG'
 import Speech from '../../assets/speech.PNG'
+import Kelis from '../../assets/kelis.jpeg'
+import Vilox from '../../assets/vilox.jpeg'
 import Top from '../../assets/top.png'
 import Reis from '../../assets/reis.png'
 import { Link } from 'react-router-dom'
 
 
 function Porfolio() {
+  const Privacy =() => {
+    alert("This Code is Private contact the user")
+  };
   return (
     <div className='portfolio' id="project">
         <div className="content">
@@ -28,6 +33,21 @@ function Porfolio() {
                 </div> 
                     <h4>Ecommerce Shopping Site</h4>
                     </div>
+
+                    <div className="item">
+                    <div className="itemImg">
+                    <img src={Vilox} alt=""  />
+                    </div>
+                      <div className="itemOverlay">
+                        
+                        <a href="https://vilox-six.vercel.app" className="link">View Site</a>
+                      <Link className="link" onClick={Privacy}>
+                        View Code
+                      </Link>
+                </div> 
+                    <h4>Crypto Currency Web</h4>
+                    </div>
+
                     <div className="item">
                     <div className="itemImg">
                     <img src={Iccef} alt=""  />
@@ -42,6 +62,21 @@ function Porfolio() {
                 </div> 
                     <h4 className="text-white my-3">Iccef Programme</h4>
                     </div>
+
+                    <div className="item">
+                    <div className="itemImg">
+                    <img src={Kelis} alt=""  />
+                    </div>
+                      <div className="itemOverlay">
+                        
+                        <a href="https://kelis-int-ng.vercel.app" className="link">View Site</a>
+                      <Link className="link"  onClick={Privacy}>
+                        View Code
+                      </Link>
+                </div> 
+                    <h4>Kelis Company Limited</h4>
+                    </div>
+
                     <div className="item">
                     <div className="itemImg">
                     <img src={Search} alt=""  />
