@@ -1,43 +1,58 @@
 .skills{
     width: 100%;
     height: auto;
+    /* padding: 40px; */
 }
 .skills  h1{
     position: relative;
 }
 .skills h1 span {
-    color: #0057ff;
+    color: #059669 ;
 }
 .skills  h1::before{
     content: '';
     height: 3px;
-    width: 200px;
-    background: #0057ff;
+    width: 180px;
+    background: #059669;
     position: absolute;
+    top: 1.2em;
     bottom: 0;
-    margin: auto;
-}
-.skillsTools{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: auto;
 }
 .skillBox{
     border: 1px solid gray;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-  background: #000;
-  margin: 30px auto;
+  background: #fff;
+  margin: 8px auto;
+  color: #000;
 }
 .skillBox .fa{
-    scale: 3;
+    position: relative;
+    top: 0.67em;
+    margin-right: 0.67em;
+    scale: 1.67;
+    
+}
+.skillBox h5{
+    background: #fff;
 }
 #light .skillBox{
     background: radial-gradient(#d9cade ,#cbc6cd );
+}
+
+
+@media(min-width: 992px) {
+    .skillBox{
+        width: 200px;
+        height: 80px;
+    }
+    .skillBox .fa{
+        scale: 3;
+    }
 }

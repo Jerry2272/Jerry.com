@@ -1,4 +1,7 @@
 .contact{
+    background: linear-gradient(rgba(255, 255, 255, 0.17) ,rgba(255, 255, 255, 0.15)), url('../../assets/contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: auto;
     margin: auto;
@@ -13,10 +16,10 @@
 }
 
 .contact h1{
-    font-size: 42px;
+    position: relative;
 }
 .contact h1 span{
-color: #0057ff;
+color: #059669;
 }
 
 .connect {
@@ -39,12 +42,13 @@ form input, textarea{
     text-align: left;
     width: 100%;
     background: transparent;
-    border: 0.5px solid gray;
+    border: 1px solid #059669;
     color: #fff;
+    border-radius: 20px;
     margin-bottom: 25px;
 }
 button{
-    background-color: #0057ff;
+    background-color: #059669;
     border: none;
     border-radius: 2px;
     padding: 10px 30px;
