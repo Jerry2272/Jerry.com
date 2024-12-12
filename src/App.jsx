@@ -1,5 +1,5 @@
 import { FaFacebookF, FaLinkedinIn,FaEnvelope, FaGithub, FaHandPointRight, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
-import { useEffect} from 'react';
+// import { useEffect} from 'react';
 import { FaCode, FaCodepen } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Iccef from '../src/assets/Iccef_programme.png';
@@ -37,7 +37,7 @@ const modeToggle = () =>{
     <div className="App" id={theme}>
       <header className="App-header px-10 lg:px-[5em] fixed z-[1] w-full"> 
       <ContextApi.Provider value={{theme, modeToggle}}>
-      <h2 className='logo'>Jerry Jakes</h2>
+      <h2 className='logo'>Jerry</h2>
       <ReactSwitc 
       onChange={modeToggle}
       checked={theme === 'dark'}
@@ -54,7 +54,7 @@ const modeToggle = () =>{
    <Navbar />
 
    {/* hero section  */}
-   <section className='HeroSection flex justify-end align-middle items-center relative h-[100vh] p-[1em] lg:p-[4em]'  id='hero'>
+   <section className='HeroSection flex justify-end align-middle items-center relative lg:h-[100vh] p-[10px] h-[70vh] lg:p-[4em]'  id='hero'>
          <div className="heroText text-start">
          <h1 className='lg:text-[6em] font-[800] text-[3em] text-white'  data-aos="fade-up"><span className=''>Hi! Jerry Atebe</span></h1>
          <h4 className='mb-[3em] text-white'>Web | WordPress Developer | Tech Saviour | Codist | Software Engineer</h4>
@@ -198,99 +198,88 @@ const modeToggle = () =>{
   
    <Skills />
    
-   {/* portfolio section  */}
-   <section className="port my-[5em]">
-  <h1 className="text-zinc-950 text-4xl font-[600]" data-aos="fade-up">
-    Showing casing my <span className="text-emerald-600">creative Journey</span>.
-  </h1>
-  <div className="grid lg:grid-cols-3 p-5 my-[3em] grid-flow-dense">
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P1} className="w-full relative hidden lg:block" alt="" />
-      <img src={P4} className="w-full relative lg:hidden" alt="" />
-      <Link to="https://jerry2272.github.io/jerryshoppingmoore"
-      target='blank'
-      >
-        <img
-          src={Ecom}
-          className="absolute inset-0 lg:w-[47.50%] h-[37%] lg:left-[10.96em] top-[5.51em] left-[5.70em] lg:top-[3.58em] w-[46%]"
-          alt=""
-        />
-      </Link>
-    </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P4} className="relative hidden lg:block" alt="" />
-      <img src={P5} className="relative lg:hidden" alt="" />
-      <Link to="https://vilox-six.vercel.app"
-      target='blank'
-      >
-        <img
-          src={Vilox}
-          className="absolute inset-0 lg:w-[49%] w-[58%] lg:left-[6.80em] left-[5em] top-[4.78em] lg:top-[5.70em]"
-          alt=""
-        />
-      </Link>
-    </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P3} className="w-[90%] relative hidden lg:block" alt="" />
-      <img src={P4} className="lg:hidden relative" alt="" />
-      <Link to="https://jerry2272.github.io/iccef_programme.github/"
-      target='blank'
-      >
-        <img
-          src={Iccef}
-          className="absolute inset-0 w-[52%] h-[37%] left-[5.38em] top-[4.76em]"
-          alt=""
-        />
-      </Link>
-    </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P4} className="relative" alt="" />
-      <a href="https://kelis-int-ng.vercel.app" 
-      target='blank'
-      >
-        <img
-          src={Kelis}
-          className="absolute inset-0 w-[48%] h-[24%] left-[7.0em] top-[6.57em]"
-          alt=""
-        />
-      </a>
-    </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P5} className="relative w-[80%] hidden lg:block" alt="" />
-      <img src={P4} className="lg:hidden" alt="" />
-      <a href="https://jerry2272.github.io/speechConverter" 
-      target='blank'
-      >
-        <img
-          src={Speech}
-          className="absolute inset-0 lg:w-[50%] w-[47%] lg:h-[25%] lg:left-[4.20em] left-[5.60em] h-[4%] top-[4.80em]"
-          alt=""
-        />
-      </a>
-    </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P4} className="w-[100%] relative" alt="" />
-      <Link to="https://jerry2272.github.io/search-images.api/"
-      target='blank'
-      >
-        <img
-          src={Search}
-          className="absolute lg:w-[48%] lg:h-[25%] lg:left-[7.01em] left-[6em] w-[43%] lg:top-[6em] top-[5.22em] roll"
-          alt=""
-        />
-      </Link>
-    </div>
-  </div>
-<div className=' flex justify-center items-center text-center w-full'>
-<a
-      href="https://github.com/Jerry2272?tab=repositories" target='blank'
-      className="text-white rounded-3xl p-3 bg-[#059669] w-[30%]"
-      data-aos="fade-up"
-    >
-      Visit Github
-    </a>
-</div>
-</section>
+   {/* Portfolio Section */}
+   <section className="portfolio-section my-20">
+      <h1 className="text-zinc-950 text-4xl font-semibold text-center mb-10" data-aos="fade-up">
+         Showcasing My <span className="text-emerald-600">Creative Journey</span>
+      </h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
+         {[
+            {
+               image: Ecom,
+               link: "https://jerry2272.github.io/jerryshoppingmoore",
+               alt: "E-commerce Project",
+               overlay: Ecom,
+            },
+            {
+               image: Vilox,
+               link: "https://vilox-six.vercel.app",
+               alt: "Vilox Project",
+               overlay: Vilox,
+            },
+            {
+               image: Iccef,
+               link: "https://jerry2272.github.io/iccef_programme.github/",
+               alt: "Iccef Project",
+               overlay: Iccef,
+            },
+            {
+               image: Kelis,
+               link: "https://kelis-int-ng.vercel.app",
+               alt: "Kelis Project",
+               overlay: Kelis,
+            },
+            {
+               image: Speech,
+               link: "https://jerry2272.github.io/speechConverter",
+               alt: "Speech Converter",
+               overlay: Speech,
+            },
+            {
+               image: Search,
+               link: "https://jerry2272.github.io/search-images.api/",
+               alt: "Image Search API",
+               overlay: Search,
+            },
+         ].map((project, index) => (
+            <div
+               key={index}
+               className="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+               data-aos="zoom-in"
+            >
+               <img
+                  src={project.image}
+                  className="w-full h-48 object-cover"
+                  alt={project.alt}
+               />
+               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <a
+                     href={project.link}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-white text-lg font-bold px-6 py-2 bg-emerald-600 rounded-full"
+                  >
+                     View Project
+                  </a>
+               </div>
+            </div>
+         ))}
+      </div>
+
+      <div className="flex justify-center items-center mt-10">
+         <a
+            href="https://github.com/Jerry2272?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white rounded-full py-3 px-8 bg-emerald-600 hover:bg-emerald-700 transition-colors duration-300"
+            data-aos="fade-up"
+         >
+            Visit Github
+         </a>
+      </div>
+   </section>
+
    {/* Portfolio section ending */}
 
    <Contact />

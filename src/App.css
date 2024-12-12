@@ -69,7 +69,8 @@ p{
 }
 .logo{
   font-size: 50px;
-  font-family: "Yuji Mai", serif;
+  color: #fff;
+  /* font-family: "Yuji Mai", serif; */
   /* color: white; */
 }
 
