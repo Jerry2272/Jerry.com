@@ -54,7 +54,7 @@ const modeToggle = () =>{
    <Navbar />
 
    {/* hero section  */}
-   <section className='HeroSection flex justify-end align-middle items-center relative lg:h-[100vh] p-[10px] h-[70vh] lg:p-[4em]'  id='hero'>
+   <section className='HeroSection flex justify-end align-middle items-center relative lg:h-[100vh] p-[10px] h-[80vh] lg:p-[4em]'  id='hero'>
          <div className="heroText text-start">
          <h1 className='lg:text-[6em] font-[800] text-[3em] text-white'  data-aos="fade-up"><span className=''>Hi! Jerry Atebe</span></h1>
          <h4 className='mb-[3em] text-white'>Web | WordPress Developer | Tech Saviour | Codist | Software Engineer</h4>
@@ -87,6 +87,10 @@ const modeToggle = () =>{
     <section  className='aboutMe' id="about">
                 <h1 className='text-zinc-950 font-[600] text-4xl my-[2em]'>About <span className='text-[#059669]'> Me</span></h1>
         <div className="aboutContent flex justify-center items-center flex-col lg:flex-row gap-1">
+        <div className="aboutImg relative">
+            <img src={Lp} className='relative overflow-hidden' alt="" />
+            <img src={myProfile}  className='absolute top-[6.30em] lg:top-[8.10em] w-[58%] h-[37%] lg:h-[38%] left-[3.15em] lg:left-[4.16em]'   data-aos="fade-up" alt="" />
+           </div>
            <div className="lg:w-[50%] text-left text">
            <p>
                 A dedicated | committed | passionate | web developer | eager to learning| based in Nigeria with over 2+ years of experience in web development and  in solving both technical and relative problem. I specialize in helping clients and individuals create and maintain websites. Adept at utilizing modern technologies like React, WordPress, and Tailwind CSS to create high-performing applications. Passionate about mentoring and simplifying complex technical concepts for diverse audiences. Strong communicator and collaborative team player committed to delivering impactful results.
@@ -117,10 +121,6 @@ const modeToggle = () =>{
                 </Link>
           </ul>
            </div>
-           </div>
-           <div className="aboutImg relative">
-            <img src={Lp} className='relative overflow-hidden' alt="" />
-            <img src={myProfile}  className='absolute top-[6.30em] lg:top-[8.10em] w-[58%] h-[37%] lg:h-[38%] left-[3.15em] lg:left-[4.16em]'   data-aos="fade-up" alt="" />
            </div>
         </div>
     </section>
