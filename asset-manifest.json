@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Jerry.com/static/css/main.ec795a0d.css",
-    "main.js": "/Jerry.com/static/js/main.a106395f.js",
+    "main.css": "/Jerry.com/static/css/main.5548d95c.css",
+    "main.js": "/Jerry.com/static/js/main.101d662c.js",
     "static/js/453.acca0757.chunk.js": "/Jerry.com/static/js/453.acca0757.chunk.js",
     "static/media/hero-bg.png": "/Jerry.com/static/media/hero-bg.68b86409c772072917a4.png",
     "static/media/Iccef_programme.png": "/Jerry.com/static/media/Iccef_programme.af30639c04afb845631c.png",
@@ -21,12 +21,12 @@
     "static/media/jakes-photo.jpg": "/Jerry.com/static/media/jakes-photo.bdd37971f2b57288466e.jpg",
     "static/media/hr-ln.png": "/Jerry.com/static/media/hr-ln.6f648f5309e6c75fffde.png",
     "index.html": "/Jerry.com/index.html",
-    "main.ec795a0d.css.map": "/Jerry.com/static/css/main.ec795a0d.css.map",
-    "main.a106395f.js.map": "/Jerry.com/static/js/main.a106395f.js.map",
+    "main.5548d95c.css.map": "/Jerry.com/static/css/main.5548d95c.css.map",
+    "main.101d662c.js.map": "/Jerry.com/static/js/main.101d662c.js.map",
     "453.acca0757.chunk.js.map": "/Jerry.com/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec795a0d.css",
-    "static/js/main.a106395f.js"
+    "static/css/main.5548d95c.css",
+    "static/js/main.101d662c.js"
   ]
 }
