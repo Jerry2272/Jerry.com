@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap');
+body{
+    background: #1E1E1E;
+    color: white;
+}
+
+
+/* navbar  */
+.navbar{
+    position: relative;
+}
+.navbar ul li a {
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 16px;  
+    /* position: relative;
+    border-top: 1px solid #FF014F;
+    padding-bottom: 4px; */
+}
+/* .navbar ul li .active{
+    color: red;
+    font-family: "Pacifico"; 
+} */
+/* navbar ending  */

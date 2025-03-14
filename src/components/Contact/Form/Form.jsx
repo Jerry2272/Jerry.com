@@ -2,7 +2,7 @@ import React from 'react'
 
 function Form() {
   return (
-    <div>
+    <div className="md:w-[55%] md:px-[2em]" >
         <form>
             <div className="inputControl">
             <input type="text" placeholder='Your Full Name' />

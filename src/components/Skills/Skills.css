@@ -6,31 +6,17 @@
 .skills  h1{
     position: relative;
 }
-.skills h1 span {
-    color: #059669 ;
-}
-.skills  h1::before{
-    content: '';
-    height: 3px;
-    width: 180px;
-    background: #059669;
-    position: absolute;
-    top: 1.2em;
-    bottom: 0;
-    margin: auto;
-}
 .skillBox{
-    border: 1px solid gray;
-    border-radius: 10px;
+    border-radius: 7px;
     width: 100px;
-    height: 40px;
+    height: 100px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-  background: #fff;
+  background: #1E1E1E;
   margin: 8px auto;
-  color: #000;
+  color: white;
 }
 .skillBox .fa{
     position: relative;
@@ -38,9 +24,6 @@
     margin-right: 0.67em;
     scale: 1.67;
     
-}
-.skillBox h5{
-    background: #fff;
 }
 #light .skillBox{
     background: radial-gradient(#d9cade ,#cbc6cd );
@@ -50,7 +33,7 @@
 @media(min-width: 992px) {
     .skillBox{
         width: 200px;
-        height: 80px;
+        height: 200px;
     }
     .skillBox .fa{
         scale: 3;

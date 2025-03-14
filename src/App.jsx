@@ -10,10 +10,12 @@ import Kelis from '../src/assets/kelis.jpeg';
 import Vilox from '../src/assets/vilox.jpeg';
 import Lp from '../src/assets/lp-about.png';
 import myProfile from '../src/assets/jakes-photo.jpg';
+import jakesPro from '../src/assets/jak.png';
 import P1 from '../src/assets/p1.png';
 import P3 from '../src/assets/p3.png';
 import P4 from '../src/assets/p4.png';
 import P5 from '../src/assets/p5.png';
+import colorPg from '../src/assets/group.png'
 import { BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
@@ -37,7 +39,7 @@ const modeToggle = () =>{
     <div className="App" id={theme}>
       <header className="App-header px-10 lg:px-[5em] fixed z-[1] w-full"> 
       <ContextApi.Provider value={{theme, modeToggle}}>
-      <h2 className='logo'>Jerry</h2>
+      <h2 className='logo'>Jerry Jakes</h2>
       <ReactSwitc 
       onChange={modeToggle}
       checked={theme === 'dark'}
@@ -54,73 +56,84 @@ const modeToggle = () =>{
    <Navbar />
 
    {/* hero section  */}
-   <section className='HeroSection flex justify-end align-middle items-center relative lg:h-[100vh] p-[10px] h-[80vh] lg:p-[4em]'  id='hero'>
+   <section className='HeroSection flex justify-center items-center relative md:h-[100vh] h-[90vh] p-[1em] md:p-[4em] flex-col md:flex-row'  id='hero'>
+ 
+          <div className="imgDisplay relative hidden md:block">
+      <img src={colorPg} className='w-[70%] relative left-0 hidden lg:block' alt="" />
+      <img src={jakesPro} className='absolute bottom-[1em] md:left-[-0.80em] hidden md:block' alt="" />
+    </div>
+
          <div className="heroText text-start">
-         <h1 className='lg:text-[6em] font-[800] text-[3em] text-white'  data-aos="fade-up"><span className=''>Hi! Jerry Atebe</span></h1>
-         <h4 className='mb-[3em] text-white'>Web | WordPress Developer | Tech Saviour | Codist | Software Engineer</h4>
+         <h6 className='md:text-[0.80em] font-[600] text-[1em]'  data-aos="fade-up">HI!, MY NAME IS</h6>
+         <h2 className='text-[50px] py-[10px]'><span className='span'>Jerry</span> Jakes</h2>
+         <h4 className='mb-[1em]'>Web | WordPress Developer | Tech Saviour | Codist | Software Engineer</h4>
+         <div className="buttonDiv flex my-[2em]">
+          <button className='rounded-1xl text-white bg-[#FF014F]'  data-aos="zoom-out">Download Cv</button>
+          <button className='bg-transparent rounded-1xl ms-6 text-white' style={
+            {border: '1px solid #FF014F'}
+          }  data-aos="zoom-out">Hire me</button>
+         </div>
          <ul className='flex text-white'>
           <Link to="https://twitter.com/JerryAtebe?t=a4UOyewZuoB-lehKkeu8kw&s=09">
-                  <FaTwitter />
+                  <FaTwitter className='ms-4 span' />
                   </Link>
-                <Link><FaLinkedinIn  className='ms-4' /></Link>
+                <Link><FaLinkedinIn  className='ms-4 span' /></Link>
                 <Link to="https://www.instagram.com/jerryjake33/">
-                <FaInstagram className='ms-4' />
+                <FaInstagram className='ms-4 span' />
                 </Link>
-                <Link to="https://wa.me/09161729605"><FaWhatsapp  className='ms-4' /></Link>
+                <Link to="https://wa.me/09161729605"><FaWhatsapp  className='ms-4 span' /></Link>
                 <Link to="https://mail.google.com/mail/u/0/#inbox?compose=new">
-                    <FaEnvelope  className='ms-4' />
+                    <FaEnvelope  className='ms-4 span' />
                 </Link>
-                <Link to="https://www.facebook.com/profile.php?id=100089627465352"><FaFacebookF  className='ms-4' /></Link>
+                <Link to="https://www.facebook.com/profile.php?id=100089627465352"><FaFacebookF  className='ms-4 span' /></Link>
                 <Link to="https://github.com/Jerry2272?tab=repositories">
-                <FaGithub  className='ms-4' /> 
+                <FaGithub  className='ms-4 span' /> 
                 </Link>
           </ul>
-         <div className="buttonDiv flex my-[2em]">
-          <button className='bg-[#059669] rounded-3xl text-white'  data-aos="zoom-out">Download Cv</button>
-          <button className='bg-[#059669] rounded-3xl ms-6 text-white'  data-aos="zoom-out">Hire me</button>
-         </div>
           </div>   
+   
     </section>  
     {/* hero section ending */}
 
     {/* about section  */}
-    <section  className='aboutMe' id="about">
-                <h1 className='text-zinc-950 font-[600] text-4xl my-[2em]'>About <span className='text-[#059669]'> Me</span></h1>
+    <section  className='aboutMe px-[1em]' id="about">
         <div className="aboutContent flex justify-center items-center flex-col lg:flex-row gap-1">
-        <div className="aboutImg relative">
-            <img src={Lp} className='relative overflow-hidden' alt="" />
-            <img src={myProfile}  className='absolute top-[6.30em] lg:top-[8.10em] w-[58%] h-[37%] lg:h-[38%] left-[3.15em] lg:left-[4.16em]'   data-aos="fade-up" alt="" />
-           </div>
-           <div className="lg:w-[50%] text-left text">
+           <div className="md:w-[45%] text-left text order-1">
+            <h5 className='md:text-[0.80em] font-[600] text-[1em] mb-[20px]'>ABOUT ME!</h5>
+            <h1 className="md:text-[40px] text-[30px] leading-[38px] mb-[30px]"><span className="span">Passionate</span> , Innovative <br /> Software <span className="span">Engineer</span></h1>
            <p>
-                A dedicated | committed | passionate | web developer | eager to learning| based in Nigeria with over 2+ years of experience in web development and  in solving both technical and relative problem. I specialize in helping clients and individuals create and maintain websites. Adept at utilizing modern technologies like React, WordPress, and Tailwind CSS to create high-performing applications. Passionate about mentoring and simplifying complex technical concepts for diverse audiences. Strong communicator and collaborative team player committed to delivering impactful results.
+                A dedicated | committed | web developer | eager to learning| based in Nigeria with over 2+ years of experience in web development and  in solving both technical and relative problem. 
             </p>
             <p>
-         I transform ideas into user-friendly and dynamic web solutions. If you're seeking a passionate and skilled developer to enhance your online presence, I'm here to help.
+            I specialize in helping clients and individuals create and maintain websites. Adept at utilizing modern technologies like React, WordPress, and Tailwind CSS to create high-performing applications. Passionate about mentoring and simplifying complex technical concepts for diverse audiences. Strong communicator and collaborative team player committed to delivering impactful results.
             </p>
             <p>
-            Solution-driven Front-End Engineer with 2+ years of experience developing responsive and user-focused websites.
+         I transform ideas into user-friendly and dynamic web solutions. If you're seeking a passionate and skilled developer to enhance your online presence, I'm here to help.   Solution-driven Front-End Engineer with 2+ years of experience developing responsive and user-focused websites.
             </p>
-           <div className="icon flex">
+           <div className="icon flex mt-[20px]">
             <FaHandPointRight className='handPoint' />
-          <ul className='flex items-center'>
+          <ul className='flex items-center mt-5'>
           <Link to="https://twitter.com/JerryAtebe?t=a4UOyewZuoB-lehKkeu8kw&s=09">
-                  <FaTwitter className='ms-4'  />
+                  <FaTwitter className='ms-4 span' />
                   </Link>
-                <Link><FaLinkedinIn className='ms-4'  /></Link>
+                <Link><FaLinkedinIn  className='ms-4 span' /></Link>
                 <Link to="https://www.instagram.com/jerryjake33/">
-                <FaInstagram className='ms-4'  />
+                <FaInstagram className='ms-4 span' />
                 </Link>
-                <Link to="https://wa.me/09161729605"><FaWhatsapp className='ms-4'  /></Link>
+                <Link to="https://wa.me/09161729605"><FaWhatsapp  className='ms-4 span' /></Link>
                 <Link to="https://mail.google.com/mail/u/0/#inbox?compose=new">
-                    <FaEnvelope className='ms-4'  />
+                    <FaEnvelope  className='ms-4 span' />
                 </Link>
-                <Link to="https://www.facebook.com/profile.php?id=100089627465352"><FaFacebookF className='ms-4'  /></Link>
+                <Link to="https://www.facebook.com/profile.php?id=100089627465352"><FaFacebookF  className='ms-4 span' /></Link>
                 <Link to="https://github.com/Jerry2272?tab=repositories">
-                <FaGithub className='ms-4'  /> 
+                <FaGithub  className='ms-4 span' /> 
                 </Link>
           </ul>
            </div>
+           </div>
+           <div className="aboutImg relative md:order-1">
+            <img src={Lp} className='relative overflow-hidden' alt="" />
+            <img src={myProfile}  className='absolute top-[6.30em] md:top-[8.10em] w-[58%] h-[37%] md:h-[38%] left-[3.15em] md:left-[4.16em]'   data-aos="fade-up" alt="" />
            </div>
         </div>
     </section>
@@ -128,19 +141,18 @@ const modeToggle = () =>{
     
   {/* services sections  */}
 
-  <section className="service" id="service">
+  <section className="service my-[3em]" id="service">
   <div className="serviceText" data-aos="fade-up">
-    <h1 className="text-zinc-950 font-[600] text-4xl">
-      What I <span> Offer</span>
-    </h1>
+  <h5 className='md:text-[0.80em] font-[600] text-[1em] mb-[20px]'>SERVICES!</h5>
+   <h1 className="md:text-[28px] text-[18px]">SERVICES I OFFER AS A <br />   <span className="span"> FRONT-END </span>    ENGINEER!</h1>
     <div
-      className="serviceContainer grid lg:grid-cols-3 lg:p-[90px]"
+      className="serviceContainer grid md:grid-cols-3 md:p-[90px]"
       data-aos="fade-up"
       data-aos-duration="1200"
     >
       <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen />
-        <h4>Web Development</h4>
+        <FaCodepen className="span text-[40px] text-center mx-auto mb-8" />
+        <h2>WEBSITE <span className="span">DEVELOPMENT</span></h2>
         <p>
           I have extensive knowledge in web developing and fundamentals, such as
           color theory and typeface with the ability to include responsive designs. I
@@ -148,16 +160,15 @@ const modeToggle = () =>{
         </p>
       </div>
       <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen />
-        <h4>SEO Optimization</h4>
+        <FaCodepen className='span text-[40px] text-center mx-auto mb-8' />
+        <h2><span className="span">PAYMENT </span> INTEGRATION</h2>
         <p>
-          Optimize website speed and efficiency, ensuring swift loading times and
-          seamless user navigation.
+         Automate the process of payments to allow users pay right on your platform.
         </p>
       </div>
       <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen />
-        <h4>Web Hosting</h4>
+        <FaCodepen className='span text-[40px] text-center mx-auto mb-8' />
+        <h2>WEB <span className="span">HOSTING</span></h2>
         <p>
           Simplify your web presence by hosting your site on reliable servers. We
           handle the technicalities, ensuring your website is accessible and secure
@@ -165,16 +176,16 @@ const modeToggle = () =>{
         </p>
       </div>
       <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen />
-        <h4>Website Maintenance</h4>
+        <FaCodepen className='span text-[40px] text-center mx-auto mb-8' />
+        <h2><span className="span">WEBSITE</span>     MAINTENANCE</h2>
         <p>
           Keep your site secure and up-to-date with regular maintenance, security
           checks, content management, and feature enhancements.
         </p>
       </div>
       <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCode />
-        <h4>Online Teaching</h4>
+        <FaCode className='span text-[40px] text-center mx-auto mb-8' />
+        <h2>ONLINE <span className="span">TEACHING</span></h2>
         <p>
           I have extensive knowledge in web developing and fundamentals, such as
           color theory and typeface with the ability to include responsive designs. I
@@ -182,8 +193,8 @@ const modeToggle = () =>{
         </p>
       </div>
       <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen />
-        <h4>Onsite Coding</h4>
+        <FaCode className='span text-[40px] text-center mx-auto mb-8' />
+        <h2><span className="span">ONSITE</span> TEACHING</h2>
         <p>
           I have extensive knowledge in web developing and fundamentals, such as
           color theory and typeface with the ability to include responsive designs. I
@@ -198,88 +209,99 @@ const modeToggle = () =>{
   
    <Skills />
    
-   {/* Portfolio Section */}
-   <section className="portfolio-section my-20">
-      <h1 className="text-zinc-950 text-4xl font-semibold text-center mb-10" data-aos="fade-up">
-         Showcasing My <span className="text-emerald-600">Creative Journey</span>
-      </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
-         {[
-            {
-               image: Ecom,
-               link: "https://jerry2272.github.io/jerryshoppingmoore",
-               alt: "E-commerce Project",
-               overlay: Ecom,
-            },
-            {
-               image: Vilox,
-               link: "https://vilox-six.vercel.app",
-               alt: "Vilox Project",
-               overlay: Vilox,
-            },
-            {
-               image: Iccef,
-               link: "https://jerry2272.github.io/iccef_programme.github/",
-               alt: "Iccef Project",
-               overlay: Iccef,
-            },
-            {
-               image: Kelis,
-               link: "https://kelis-int-ng.vercel.app",
-               alt: "Kelis Project",
-               overlay: Kelis,
-            },
-            {
-               image: Speech,
-               link: "https://jerry2272.github.io/speechConverter",
-               alt: "Speech Converter",
-               overlay: Speech,
-            },
-            {
-               image: Search,
-               link: "https://jerry2272.github.io/search-images.api/",
-               alt: "Image Search API",
-               overlay: Search,
-            },
-         ].map((project, index) => (
-            <div
-               key={index}
-               className="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
-               data-aos="zoom-in"
-            >
-               <img
-                  src={project.image}
-                  className="w-full h-48 object-cover"
-                  alt={project.alt}
-               />
-               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                     href={project.link}
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="text-white text-lg font-bold px-6 py-2 bg-emerald-600 rounded-full"
-                  >
-                     View Project
-                  </a>
-               </div>
-            </div>
-         ))}
-      </div>
-
-      <div className="flex justify-center items-center mt-10">
-         <a
-            href="https://github.com/Jerry2272?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white rounded-full py-3 px-8 bg-emerald-600 hover:bg-emerald-700 transition-colors duration-300"
-            data-aos="fade-up"
-         >
-            Visit Github
-         </a>
-      </div>
-   </section>
-
+   {/* portfolio section  */}
+   <section className="port my-[5em]">
+  <h1 className="text-zinc-950 text-4xl font-[600]" data-aos="fade-up">
+    Showing casing my <span className="text-emerald-600">creative Journey</span>.
+  </h1>
+  <div className="grid lg:grid-cols-3 p-5 my-[3em] grid-flow-dense">
+    <div className="item relative" data-aos="zoom-in">
+      <img src={P1} className="w-full relative hidden lg:block" alt="" />
+      <img src={P4} className="w-full relative lg:hidden" alt="" />
+      <Link to="https://jerry2272.github.io/jerryshoppingmoore"
+      target='blank'
+      >
+        <img
+          src={Ecom}
+          className="absolute inset-0 lg:w-[47.50%] h-[37%] lg:left-[10.96em] top-[5.51em] left-[5.70em] lg:top-[3.58em] w-[46%]"
+          alt=""
+        />
+      </Link>
+    </div>
+    <div className="item relative" data-aos="zoom-in">
+      <img src={P4} className="relative hidden lg:block" alt="" />
+      <img src={P5} className="relative lg:hidden" alt="" />
+      <Link to="https://vilox-six.vercel.app"
+      target='blank'
+      >
+        <img
+          src={Vilox}
+          className="absolute inset-0 lg:w-[49%] w-[58%] lg:left-[6.80em] left-[5em] top-[4.78em] lg:top-[5.70em]"
+          alt=""
+        />
+      </Link>
+    </div>
+    <div className="item relative" data-aos="zoom-in">
+      <img src={P3} className="w-[90%] relative hidden lg:block" alt="" />
+      <img src={P4} className="lg:hidden relative" alt="" />
+      <Link to="https://jerry2272.github.io/iccef_programme.github/"
+      target='blank'
+      >
+        <img
+          src={Iccef}
+          className="absolute inset-0 w-[52%] h-[37%] left-[5.38em] top-[4.76em]"
+          alt=""
+        />
+      </Link>
+    </div>
+    <div className="item relative" data-aos="zoom-in">
+      <img src={P4} className="relative" alt="" />
+      <a href="https://kelis-int-ng.vercel.app" 
+      target='blank'
+      >
+        <img
+          src={Kelis}
+          className="absolute inset-0 w-[48%] h-[24%] left-[7.0em] top-[6.57em]"
+          alt=""
+        />
+      </a>
+    </div>
+    <div className="item relative" data-aos="zoom-in">
+      <img src={P5} className="relative w-[80%] hidden lg:block" alt="" />
+      <img src={P4} className="lg:hidden" alt="" />
+      <a href="https://jerry2272.github.io/speechConverter" 
+      target='blank'
+      >
+        <img
+          src={Speech}
+          className="absolute inset-0 lg:w-[50%] w-[47%] lg:h-[25%] lg:left-[4.20em] left-[5.60em] h-[4%] top-[4.80em]"
+          alt=""
+        />
+      </a>
+    </div>
+    <div className="item relative" data-aos="zoom-in">
+      <img src={P4} className="w-[100%] relative" alt="" />
+      <Link to="https://jerry2272.github.io/search-images.api/"
+      target='blank'
+      >
+        <img
+          src={Search}
+          className="absolute lg:w-[48%] lg:h-[25%] lg:left-[7.01em] left-[6em] w-[43%] lg:top-[6em] top-[5.22em] roll"
+          alt=""
+        />
+      </Link>
+    </div>
+  </div>
+<div className=' flex justify-center items-center text-center w-full'>
+<a
+      href="https://github.com/Jerry2272?tab=repositories" target='blank'
+      className="text-white rounded-3xl p-3 bg-[#059669] w-[30%]"
+      data-aos="fade-up"
+    >
+      Visit Github
+    </a>
+</div>
+</section>
    {/* Portfolio section ending */}
 
    <Contact />

@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yuji+Mai&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yuji+Mai&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -13,9 +7,26 @@
   overflow-x: hidden;
   /* font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
 }
+
+h1 , h2{
+  font-family: "Merriweather";
+}
+
+.logo{
+  font-size: 30px;  
+}
+.logo , .span{
+  font-family: "Pacifico"; 
+  color: #FF014F;
+}
+button{
+  background-color: #FF014F;
+  border-radius: 4px;
+}
+
 p{
   /* font-family: "Yuji Mai", serif; */
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -36,14 +47,14 @@ p{
   }
 } */
 #dark{
-  background:white;
-  color: black;
+  background:black;
+  color: white;
   /* font-family:Baskerville Old Face ; */
   /* transition: all 3s ease; */
 }
 #light{
-  background:#000;
-  color: white!important;
+  background: white;
+  color: black!important;
   /* transition: all 3s ease; */
 }
 .state{
@@ -67,12 +78,6 @@ p{
 .react-switch-handle{
   display: none!important;
 }
-.logo{
-  font-size: 50px;
-  color: #fff;
-  /* font-family: "Yuji Mai", serif; */
-  /* color: white; */
-}
 
 @keyframes App-logo-spin {
   from {
@@ -84,12 +89,7 @@ p{
 }
 
 /* hero section  */
-.HeroSection{
-  background: url('../src/assets/hero-bg.png') , url('../src/assets/jake.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-}
+
 .HeroSection h1{
 text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.69);
 }
@@ -98,41 +98,26 @@ text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.69);
 
   /* about section  */
   .aboutMe{
-    background:url('../src/assets/hr-ln.png');
+    background: linear-gradient(to right, rgba(0,0, 0, 0.97),rgba(0, 0, 0, 0.85)) ,url('../src/assets/hr-ln.png');
     background-position: 10%;
     background-repeat: repeat;
     background-attachment: fixed;
     width: 100%;
 }
-.aboutMe h1{
-  position: relative;
-}
-.aboutMe h1::before{
-  content: '';
-  height: 3px;
-  width: 100px;
-  background: #059669;
-  position: absolute;
-  top: 1.1em;
-  bottom: 0;
-  margin: auto;
-}
 .aboutMe .text {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 2px 4px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.49);
 }
 .aboutMe .text p {
 font-weight: bolder;
 font-size: 18px;
-padding: 10px 18px;
+line-height: 30px;
 }
 #dark .aboutContent{
     height: 100%;
     margin-left: auto;
     /* background: #000; */
 }
-#light .aboutMe .text {
+#light .aboutMe {
   background-color: #000;
 }
 #light .aboutMe .icon .ms-4{
@@ -141,16 +126,6 @@ padding: 10px 18px;
 /* #light .aboutContent{
     background: radial-gradient(#d9cade ,#cbc6cd );
 } */
-
-.aboutContent h1::before{
-    content: '';
-    height: 3px;
-    width: 100px;
-    background: #0057ff;
-    position: absolute;
-    bottom: 0;
-    margin: auto;
-}
 #light .icon ul a{
     color: #0b010e;
     margin-left: 20px;
@@ -170,43 +145,14 @@ padding: 10px 18px;
     height: auto;
     padding: 60px 0;
 }
-.serviceText h1{
- background: url('../src/assets/service-bg.png');
- background-repeat: no-repeat;
- background-position: center;
- margin-top: auto;
- height: 100px;
- display: flex;
- align-items: end;
- position: relative;
- justify-content: center;
-}
-.serviceText h1 span {
-    color: #059669;
-}
-.serviceText  h1::before{
-    content: '';
-    height: 3px;
-    width: 100px;
-    background: #059669;
-    position: absolute;
-    bottom: -10px;
-    transform: translateX(-40px);
-}
-#light .serviceText h1{
-    background: linear-gradient(rgba(217, 202, 222,0.65), rgba(203, 198, 205,1)), url('../src/assets/service-bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 
 .serviceContent{
   margin: 20px;
     padding: 20px 8px;
-    border: 2px solid white;
+    /* border: 1px solid white; */
     border-radius: 20px;
-    box-shadow: 2px 2px 2px 1px black;
+    background: #1E1E1E;
 
 }
 .serviceContent:hover{
@@ -354,6 +300,16 @@ color: #0057ff;
 
 
 
+@media (max-width: 768px) {
+  .logo , .span{
+  font-family: "Pacifico"; 
+  color: #FF014F;
+}
+.aboutMe p{
+  font-weight: 500;
+  font-size: 14px;
+}
+}
 @media (min-width: 992px) {
   *{
     overflow-x: visible;

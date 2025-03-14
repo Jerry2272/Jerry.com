@@ -1,29 +1,15 @@
 .contact{
-    background: linear-gradient(rgba(255, 255, 255, 0.17) ,rgba(255, 255, 255, 0.15)), url('../../assets/contact.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
     height: auto;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
 }
-.contact .contactContent{
-    width: 600px;
-    margin: auto;
-}
 
-.contact h1{
-    position: relative;
-}
 .contact h1 span{
-color: #059669;
+color: #FF014F;
 }
 
 .connect {
     animation: rotate 0.45s infinite ease;
+    font-size: 28px;
 }
 
 
@@ -41,17 +27,20 @@ form input, textarea{
     padding: 10px;
     text-align: left;
     width: 100%;
-    background: transparent;
-    border: 1px solid #059669;
+    background: rgba(255, 255, 255,0.1);
+    /* border: 1px solid #FFF; */
     color: #fff;
-    border-radius: 20px;
+    border-radius: 7px;
     margin-bottom: 25px;
 }
 button{
-    background-color: #059669;
+    background-color: #FF014F;
     border: none;
     border-radius: 2px;
     padding: 10px 30px;
     height: 42px;
     cursor: pointer;
+}
+ul li{
+    text-align: left;
 }

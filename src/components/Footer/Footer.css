@@ -3,7 +3,7 @@
     height: auto;
     color: white;
     margin: 40px 0;
-    background: #059669;
+    background: #FF014F;
 }
 .footerMap{
 position: absolute;
@@ -16,7 +16,7 @@ width: 100%;
 
 .footerContent{
     z-index: 1;
-    background: #059669;
+    background: rgba(255, 255, 255,0.1);
     ;
     /* padding: 30px; */
 } 

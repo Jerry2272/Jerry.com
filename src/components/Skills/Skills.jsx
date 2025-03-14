@@ -5,11 +5,11 @@ import { FaBootstrap, FaCss3, FaFigma, FaGit, FaGithub, FaHtml5, FaJsSquare, FaP
 function Skills() {
   return (
 <div className="skills" id="skill">
-  <h1 className="text-zinc-950 font-[600] text-4xl leading-8 flex justify-center items-center gap-2 mb-8">
+  <h1 className="flex justify-center items-center gap-2 md:text-[40px] text-[30px] leading-[38px] mb-[30px]">
     <FaTools />
-    Technical <span className="text-emerald-600">ToolBar</span>
+    Technical <span className="span">ToolBar</span>
   </h1>
-  <div className="skillsTools grid grid-cols-3 p-5 lg:p-14 lg:grid-cols-6">
+  <div className="skillsTools grid grid-cols-3 p-5 lg:p-14 md:grid-cols-6 md:px-[2em]">
     <div className="skillBox" data-aos="fade-up">
       <FaHtml5 className="fa" style={{ marginBottom: '40px' }} />
       <h5>HTML 5</h5>
