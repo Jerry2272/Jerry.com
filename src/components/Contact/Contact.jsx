@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
-    <div className='contact flex flex-col md:flex-row text-left md:mx-[4em] mx-[1em]' id="contact">
+    <div className='contact flex flex-col md:flex-row text-left md:mx-[4em] mx-[1em] items-center'  id="contact">
         <div className="contactContent text-left">
         <h5 className='md:text-[0.80em] font-[600] text-[1em] mb-[20px]'>GET IN TOUCH !</h5>
-        <h1 className="md:text-[40px] text-[30px] leading-[38px] mb-[30px]">Have an Awesome Projects Ideas? <br /><span className="span">Let's Discuss</span>
+        <h1 className="md:text-[40px] text-[30px] leading-[38px] mb-[30px] md:leading-[48px]">Have an Awesome Projects Ideas? <span className="span">Let's Discuss</span>
         </h1>
             <p>Discuss a project or just want to say hi? Connect with me via email or through a phone call.</p>
             <ul className='text-left p-0 mt-10'>

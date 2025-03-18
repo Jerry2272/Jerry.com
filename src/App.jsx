@@ -11,10 +11,6 @@ import Vilox from '../src/assets/vilox.jpeg';
 import Lp from '../src/assets/lp-about.png';
 import myProfile from '../src/assets/jakes-photo.jpg';
 import jakesPro from '../src/assets/jak.png';
-import P1 from '../src/assets/p1.png';
-import P3 from '../src/assets/p3.png';
-import P4 from '../src/assets/p4.png';
-import P5 from '../src/assets/p5.png';
 import colorPg from '../src/assets/group.png'
 import { BrowserRouter} from 'react-router-dom';
 import './App.css';
@@ -211,82 +207,86 @@ const modeToggle = () =>{
    
    {/* portfolio section  */}
    <section className="port my-[5em]">
-  <h1 className="text-zinc-950 text-4xl font-[600]" data-aos="fade-up">
-    Showing casing my <span className="text-emerald-600">creative Journey</span>.
+  <h1 className=" text-4xl font-[600]" data-aos="fade-up">
+    Showing casing my <span className="span">creative Journey</span>.
   </h1>
-  <div className="grid lg:grid-cols-3 p-5 my-[3em] grid-flow-dense">
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P1} className="w-full relative hidden lg:block" alt="" />
-      <img src={P4} className="w-full relative lg:hidden" alt="" />
+  <div className="grid md:grid-cols-3 p-5 my-[3em] md:gap-[60px] md:px-[4em]">
+    <div className="item relative p-[1em] h-[200px]" data-aos="zoom-in" style={{
+      background: 'rgba(255, 255, 255,0.1)',
+    }}>
       <Link to="https://jerry2272.github.io/jerryshoppingmoore"
       target='blank'
       >
         <img
           src={Ecom}
-          className="absolute inset-0 lg:w-[47.50%] h-[37%] lg:left-[10.96em] top-[5.51em] left-[5.70em] lg:top-[3.58em] w-[46%]"
+          className="h-[120%]"
           alt=""
         />
       </Link>
     </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P4} className="relative hidden lg:block" alt="" />
-      <img src={P5} className="relative lg:hidden" alt="" />
+    <div className="item  p-[2em] h-[300px] flex" data-aos="zoom-in"  style={{
+      background: 'rgba(255, 255, 255,0.1)',
+    }}>
       <Link to="https://vilox-six.vercel.app"
       target='blank'
       >
         <img
           src={Vilox}
-          className="absolute inset-0 lg:w-[49%] w-[58%] lg:left-[6.80em] left-[5em] top-[4.78em] lg:top-[5.70em]"
+            className="h-[120%]"
           alt=""
         />
       </Link>
     </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P3} className="w-[90%] relative hidden lg:block" alt="" />
-      <img src={P4} className="lg:hidden relative" alt="" />
+    <div className="item relative" data-aos="zoom-in" 
+     style={{
+      background: 'rgba(255, 255, 255,0.1)',
+    }}>
       <Link to="https://jerry2272.github.io/iccef_programme.github/"
       target='blank'
       >
         <img
           src={Iccef}
-          className="absolute inset-0 w-[52%] h-[37%] left-[5.38em] top-[4.76em]"
+            className="h-[120%]"
           alt=""
         />
       </Link>
     </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P4} className="relative" alt="" />
+    <div className="item relative" data-aos="zoom-in"  style={{
+      background: 'rgba(255, 255, 255,0.1)',
+    }}>
       <a href="https://kelis-int-ng.vercel.app" 
       target='blank'
       >
         <img
           src={Kelis}
-          className="absolute inset-0 w-[48%] h-[24%] left-[7.0em] top-[6.57em]"
+           className="h-[120%]"
           alt=""
         />
       </a>
     </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P5} className="relative w-[80%] hidden lg:block" alt="" />
-      <img src={P4} className="lg:hidden" alt="" />
+    <div className="item relative " data-aos="zoom-in"  style={{
+      background: 'rgba(255, 255, 255,0.1)',
+    }}>
       <a href="https://jerry2272.github.io/speechConverter" 
       target='blank'
       >
         <img
           src={Speech}
-          className="absolute inset-0 lg:w-[50%] w-[47%] lg:h-[25%] lg:left-[4.20em] left-[5.60em] h-[4%] top-[4.80em]"
+          className=""
           alt=""
         />
       </a>
     </div>
-    <div className="item relative" data-aos="zoom-in">
-      <img src={P4} className="w-[100%] relative" alt="" />
+    <div className="item relative p-[1em] md:h-[300px]
+" data-aos="zoom-in"  style={{
+      background: 'rgba(255, 255, 255,0.1)',
+    }}>
       <Link to="https://jerry2272.github.io/search-images.api/"
       target='blank'
       >
         <img
           src={Search}
-          className="absolute lg:w-[48%] lg:h-[25%] lg:left-[7.01em] left-[6em] w-[43%] lg:top-[6em] top-[5.22em] roll"
+          className="roll"
           alt=""
         />
       </Link>
@@ -295,7 +295,7 @@ const modeToggle = () =>{
 <div className=' flex justify-center items-center text-center w-full'>
 <a
       href="https://github.com/Jerry2272?tab=repositories" target='blank'
-      className="text-white rounded-3xl p-3 bg-[#059669] w-[30%]"
+      className="text-white rounded-1xl p-3 bg-[#FF014F] w-[30%]"
       data-aos="fade-up"
     >
       Visit Github

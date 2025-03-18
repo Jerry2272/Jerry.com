@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Navbar.css';
 import {HashLink as Link} from 'react-router-hash-link'
-import { FaBars, FaTimes} from 'react-icons/fa'
+import {  FaTimes} from 'react-icons/fa'
 
 function Navbar() {
   const navRef = useRef(null);
@@ -52,7 +52,7 @@ function Navbar() {
           </button>
         </nav>
         <button  onClick={toggleNav} className='menu'>
-        <FaBars />
+       Open  Menu
         </button>
       </div>
     </header>

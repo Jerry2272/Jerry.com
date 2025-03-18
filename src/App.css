@@ -176,18 +176,12 @@ line-height: 30px;
   height: auto;
   padding: 50px 0;
 }
+.portfolio .grid .item{
+  margin: 70px;
+  background-color: red;
+}
 .port h1{
  position: relative;
-}
-.port h1::before{
-  content: '';
-  height: 3px;
-  width: 300px;
-  background: #059669;
-  position: absolute;
-  top: 1.5em;
-  bottom: 0;
-  margin: auto;
 }
 .portfolio .content .item h4{
   padding-left: 10px;
@@ -202,15 +196,6 @@ color: #0057ff;
 }
 .portfolio h2{
   position: relative;
-}
-.portfolio h2::before{
-  content: '';
-  height: 3px;
-  width: 200px;
-  background: #0057ff;
-  position: absolute;
-  bottom: 0;
-  margin: auto;
 }
 .content{
   display: flex;

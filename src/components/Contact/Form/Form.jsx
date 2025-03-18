@@ -8,8 +8,8 @@ function Form() {
             <input type="text" placeholder='Your Full Name' />
             <input type="email" placeholder='Enter you Email Address' />
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder='what is your Idea ablout' className='text-zinc-950'></textarea>
-            <button className='text-white rounded-3xl'>Send message</button>
+            <textarea name="" id="" cols="30" rows="10" placeholder='What Is Your Idea About' className='text-zinc-950'></textarea>
+            <button className='rounded-1xl text-white bg-[#FF014F]'>Send message</button>
         </form>
     </div>
   )
