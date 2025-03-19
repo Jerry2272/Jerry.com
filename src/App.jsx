@@ -210,88 +210,34 @@ const modeToggle = () =>{
   <h1 className=" text-4xl font-[600]" data-aos="fade-up">
     Showing casing my <span className="span">creative Journey</span>.
   </h1>
-  <div className="grid md:grid-cols-3 p-5 my-[3em] md:gap-[60px] md:px-[4em]">
-    <div className="item relative p-[1em] h-[200px]" data-aos="zoom-in" style={{
-      background: 'rgba(255, 255, 255,0.1)',
-    }}>
-      <Link to="https://jerry2272.github.io/jerryshoppingmoore"
-      target='blank'
-      >
-        <img
-          src={Ecom}
-          className="h-[120%]"
-          alt=""
-        />
-      </Link>
-    </div>
-    <div className="item  p-[2em] h-[300px] flex" data-aos="zoom-in"  style={{
-      background: 'rgba(255, 255, 255,0.1)',
-    }}>
-      <Link to="https://vilox-six.vercel.app"
-      target='blank'
-      >
-        <img
-          src={Vilox}
-            className="h-[120%]"
-          alt=""
-        />
-      </Link>
-    </div>
-    <div className="item relative" data-aos="zoom-in" 
-     style={{
-      background: 'rgba(255, 255, 255,0.1)',
-    }}>
-      <Link to="https://jerry2272.github.io/iccef_programme.github/"
-      target='blank'
-      >
-        <img
-          src={Iccef}
-            className="h-[120%]"
-          alt=""
-        />
-      </Link>
-    </div>
-    <div className="item relative" data-aos="zoom-in"  style={{
-      background: 'rgba(255, 255, 255,0.1)',
-    }}>
-      <a href="https://kelis-int-ng.vercel.app" 
-      target='blank'
-      >
-        <img
-          src={Kelis}
-           className="h-[120%]"
-          alt=""
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5 my-12 md:px-16">
+  {/* Project Items */}
+  {[ 
+    { link: "https://jerry2272.github.io/jerryshoppingmoore", image: Ecom },
+    { link: "https://vilox-six.vercel.app", image: Vilox },
+    { link: "https://jerry2272.github.io/iccef_programme.github/", image: Iccef },
+    { link: "https://kelis-int-ng.vercel.app", image: Kelis },
+    { link: "https://jerry2272.github.io/speechConverter", image: Speech },
+    { link: "https://jerry2272.github.io/search-images.api/", image: Search }
+  ].map((project, index) => (
+    <div 
+      key={index} 
+      className="relative flex justify-center items-center overflow-hidden bg-white/10 rounded-lg shadow-lg h-[250px] md:h-[300px] transition-transform duration-300 cursor-pointer px-[20px]" 
+      data-aos="zoom-in"
+    >
+      <a href={project.link} target="_blank" rel="noopener noreferrer">
+        <img 
+          src={project.image} 
+          className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-90 hover:scale-[1]" 
+          alt="Project"
         />
       </a>
     </div>
-    <div className="item relative " data-aos="zoom-in"  style={{
-      background: 'rgba(255, 255, 255,0.1)',
-    }}>
-      <a href="https://jerry2272.github.io/speechConverter" 
-      target='blank'
-      >
-        <img
-          src={Speech}
-          className=""
-          alt=""
-        />
-      </a>
-    </div>
-    <div className="item relative p-[1em] md:h-[300px]
-" data-aos="zoom-in"  style={{
-      background: 'rgba(255, 255, 255,0.1)',
-    }}>
-      <Link to="https://jerry2272.github.io/search-images.api/"
-      target='blank'
-      >
-        <img
-          src={Search}
-          className="roll"
-          alt=""
-        />
-      </Link>
-    </div>
-  </div>
+  ))}
+</div>
+
+
+
 <div className=' flex justify-center items-center text-center w-full'>
 <a
       href="https://github.com/Jerry2272?tab=repositories" target='blank'
