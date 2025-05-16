@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Jerry.com/static/css/main.0ea839f5.css",
-    "main.js": "/Jerry.com/static/js/main.a0fc393e.js",
+    "main.css": "/Jerry.com/static/css/main.db185b36.css",
+    "main.js": "/Jerry.com/static/js/main.7374d8dc.js",
     "static/js/453.acca0757.chunk.js": "/Jerry.com/static/js/453.acca0757.chunk.js",
     "static/media/Iccef_programme.png": "/Jerry.com/static/media/Iccef_programme.af30639c04afb845631c.png",
+    "static/media/greenPk.jpeg": "/Jerry.com/static/media/greenPk.cc48537f4bca8e05d0c5.jpeg",
     "static/media/speech.PNG": "/Jerry.com/static/media/speech.044d1bdac554015bc936.PNG",
-    "static/media/ecommerce.PNG": "/Jerry.com/static/media/ecommerce.b746edf12991e2c15f6d.PNG",
     "static/media/search.PNG": "/Jerry.com/static/media/search.109abc09ec5603672447.PNG",
-    "static/media/kelis.jpeg": "/Jerry.com/static/media/kelis.5d595dc7f60f5ef5722b.jpeg",
     "static/media/vilox.jpeg": "/Jerry.com/static/media/vilox.13d3d83bb6746ea6c27c.jpeg",
+    "static/media/pro-scr.jpeg": "/Jerry.com/static/media/pro-scr.4aecea440e0b1d1ece21.jpeg",
     "static/media/lp-about.png": "/Jerry.com/static/media/lp-about.b7af9cf8e79ee1a8d1c2.png",
     "static/media/jak.png": "/Jerry.com/static/media/jak.c29ad8c0738b9d7c8728.png",
-    "static/media/jakes-photo.jpg": "/Jerry.com/static/media/jakes-photo.bdd37971f2b57288466e.jpg",
+    "static/media/jakes-pic.png": "/Jerry.com/static/media/jakes-pic.dc7fe6b7744b385b64dd.png",
     "static/media/hr-ln.png": "/Jerry.com/static/media/hr-ln.6f648f5309e6c75fffde.png",
     "static/media/group.png": "/Jerry.com/static/media/group.ae6845939cc5b68dc55e.png",
     "index.html": "/Jerry.com/index.html",
-    "main.0ea839f5.css.map": "/Jerry.com/static/css/main.0ea839f5.css.map",
-    "main.a0fc393e.js.map": "/Jerry.com/static/js/main.a0fc393e.js.map",
+    "main.db185b36.css.map": "/Jerry.com/static/css/main.db185b36.css.map",
+    "main.7374d8dc.js.map": "/Jerry.com/static/js/main.7374d8dc.js.map",
     "453.acca0757.chunk.js.map": "/Jerry.com/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ea839f5.css",
-    "static/js/main.a0fc393e.js"
+    "static/css/main.db185b36.css",
+    "static/js/main.7374d8dc.js"
   ]
 }
