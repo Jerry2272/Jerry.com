@@ -3,13 +3,13 @@ import { FaFacebookF, FaLinkedinIn,FaEnvelope, FaGithub, FaHandPointRight, FaIns
 import { FaCode, FaCodepen } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Iccef from '../src/assets/Iccef_programme.png';
-import Ecom from '../src/assets/ecommerce.PNG';
+import proTech from '../src/assets/pro-scr.jpeg';
 import Search from '../src/assets/search.PNG';
 import Speech from '../src/assets/speech.PNG';
-import Kelis from '../src/assets/kelis.jpeg';
+import greenPark from '../src/assets/greenPk.jpeg';
 import Vilox from '../src/assets/vilox.jpeg';
 import Lp from '../src/assets/lp-about.png';
-import myProfile from '../src/assets/jakes-photo.jpg';
+import myProfile from '../src/assets/jakes-pic.png';
 import jakesPro from '../src/assets/jak.png';
 import colorPg from '../src/assets/group.png'
 import { BrowserRouter} from 'react-router-dom';
@@ -93,18 +93,18 @@ const modeToggle = () =>{
 
     {/* about section  */}
     <section  className='aboutMe px-[1em]' id="about">
-        <div className="aboutContent flex justify-center items-center flex-col lg:flex-row gap-1">
+        <div className="aboutContent flex justify-center items-center flex-col md:flex-row gap-1">
            <div className="md:w-[45%] text-left text order-1">
             <h5 className='md:text-[0.80em] font-[600] text-[1em] mb-[20px]'>ABOUT ME!</h5>
             <h1 className="md:text-[40px] text-[30px] leading-[38px] mb-[30px]"><span className="span">Passionate</span> , Innovative <br /> Software <span className="span">Engineer</span></h1>
            <p>
-                A dedicated | committed | web developer | eager to learning| based in Nigeria with over 2+ years of experience in web development and  in solving both technical and relative problem. 
+           I'm a passionate and innovative Front-end Engineer with over 2+ years of experience in building responsive, user-centric web solutions. My expertise lies in leveraging modern technologies like React, Tailwind CSS, and WordPress to deliver elegant, scalable, and high-performing applications.
+            </p>
+            <p className='py-4'>
+            Based in Nigeria, I'm deeply committed to learning, growing, and solving both technical and human-centered challenges through code. I specialize in helping clients and individuals create and maintain impactful digital platforms. With a strong problem-solving mindset, I thrive in collaborative environments where I can contribute meaningfully and continuously improve.
             </p>
             <p>
-            I specialize in helping clients and individuals create and maintain websites. Adept at utilizing modern technologies like React, WordPress, and Tailwind CSS to create high-performing applications. Passionate about mentoring and simplifying complex technical concepts for diverse audiences. Strong communicator and collaborative team player committed to delivering impactful results.
-            </p>
-            <p>
-         I transform ideas into user-friendly and dynamic web solutions. If you're seeking a passionate and skilled developer to enhance your online presence, I'm here to help.   Solution-driven Front-End Engineer with 2+ years of experience developing responsive and user-focused websites.
+            Beyond writing clean code, I enjoy mentoring others and simplifying complex technical concepts for diverse audiences. I'm a dedicated team player, an excellent communicator, and someone who turns ideas into dynamic, user-friendly web experiences. If you're seeking a solution-driven developer with a heart for innovation — I'm here to help bring your vision to life.
             </p>
            <div className="icon flex mt-[20px]">
             <FaHandPointRight className='handPoint' />
@@ -128,8 +128,8 @@ const modeToggle = () =>{
            </div>
            </div>
            <div className="aboutImg relative md:order-1">
-            <img src={Lp} className='relative overflow-hidden' alt="" />
-            <img src={myProfile}  className='absolute top-[6.30em] md:top-[8.10em] w-[58%] h-[37%] md:h-[38%] left-[3.15em] md:left-[4.16em]'   data-aos="fade-up" alt="" />
+            <img src={Lp} className='relative overflow-hidden h-[80%]' alt="" />
+            <img src={myProfile}  className='absolute top-[20%] h-[44%]  md:top-[25%] w-[58%]  md:h-[038%] left-[3.15em] md:left-[4.16em] '   data-aos="fade-up" alt="" />
            </div>
         </div>
     </section>
@@ -141,63 +141,66 @@ const modeToggle = () =>{
   <div className="serviceText" data-aos="fade-up">
   <h5 className='md:text-[0.80em] font-[600] text-[1em] mb-[20px]'>SERVICES!</h5>
    <h1 className="md:text-[28px] text-[18px]">SERVICES I OFFER AS A <br />   <span className="span"> FRONT-END </span>    ENGINEER!</h1>
-    <div
-      className="serviceContainer grid md:grid-cols-3 md:p-[90px]"
-      data-aos="fade-up"
-      data-aos-duration="1200"
-    >
-      <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen className="span text-[40px] text-center mx-auto mb-8" />
-        <h2>WEBSITE <span className="span">DEVELOPMENT</span></h2>
-        <p>
-          I have extensive knowledge in web developing and fundamentals, such as
-          color theory and typeface with the ability to include responsive designs. I
-          am also familiar with Bootstrap | Tailwind and other tech skills.
-        </p>
-      </div>
-      <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen className='span text-[40px] text-center mx-auto mb-8' />
-        <h2><span className="span">PAYMENT </span> INTEGRATION</h2>
-        <p>
-         Automate the process of payments to allow users pay right on your platform.
-        </p>
-      </div>
-      <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen className='span text-[40px] text-center mx-auto mb-8' />
-        <h2>WEB <span className="span">HOSTING</span></h2>
-        <p>
-          Simplify your web presence by hosting your site on reliable servers. We
-          handle the technicalities, ensuring your website is accessible and secure
-          24/7.
-        </p>
-      </div>
-      <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCodepen className='span text-[40px] text-center mx-auto mb-8' />
-        <h2><span className="span">WEBSITE</span>     MAINTENANCE</h2>
-        <p>
-          Keep your site secure and up-to-date with regular maintenance, security
-          checks, content management, and feature enhancements.
-        </p>
-      </div>
-      <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCode className='span text-[40px] text-center mx-auto mb-8' />
-        <h2>ONLINE <span className="span">TEACHING</span></h2>
-        <p>
-          I have extensive knowledge in web developing and fundamentals, such as
-          color theory and typeface with the ability to include responsive designs. I
-          am also familiar with Bootstrap | Tailwind and other tech skills.
-        </p>
-      </div>
-      <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
-        <FaCode className='span text-[40px] text-center mx-auto mb-8' />
-        <h2><span className="span">ONSITE</span> TEACHING</h2>
-        <p>
-          I have extensive knowledge in web developing and fundamentals, such as
-          color theory and typeface with the ability to include responsive designs. I
-          am also familiar with Bootstrap | Tailwind and other tech skills.
-        </p>
-      </div>
-    </div>
+   <div
+  className="serviceContainer grid lg:grid-cols-3 md:grid-cols-2 md:p-[90px]"
+  data-aos="fade-up"
+  data-aos-duration="1200"
+>
+  {/* WEBSITE DEVELOPMENT */}
+  <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
+    <FaCodepen className="span text-[40px] text-center mx-auto mb-8" />
+    <h2>WEBSITE <span className="span">DEVELOPMENT</span></h2>
+    <p>
+      I design and build modern, responsive, and user-friendly websites using React, WordPress, Tailwind CSS, and other tools to deliver functional web solutions tailored to client needs.
+    </p>
+  </div>
+
+  {/* PAYMENT INTEGRATION */}
+  <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
+    <FaCodepen className="span text-[40px] text-center mx-auto mb-8" />
+    <h2><span className="span">PAYMENT</span> INTEGRATION</h2>
+    <p>
+      I implement secure payment gateways like Flutterwave and Paystack into websites and applications, enabling smooth and reliable online transactions for your users.
+    </p>
+  </div>
+
+  {/* WEB HOSTING */}
+  <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
+    <FaCodepen className="span text-[40px] text-center mx-auto mb-8" />
+    <h2>WEB <span className="span">HOSTING</span></h2>
+    <p>
+      From domain setup to deployment, I help host your website on fast and reliable platforms like Netlify, Vercel, or shared hosting providers, ensuring it stays live and secure 24/7.
+    </p>
+  </div>
+
+  {/* WEBSITE MAINTENANCE */}
+  <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
+    <FaCodepen className="span text-[40px] text-center mx-auto mb-8" />
+    <h2><span className="span">WEBSITE</span> MAINTENANCE</h2>
+    <p>
+      I offer regular site updates, security monitoring, bug fixing, and feature enhancements to keep your website running smoothly and securely over time.
+    </p>
+  </div>
+
+  {/* ONLINE TEACHING */}
+  <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
+    <FaCode className="span text-[40px] text-center mx-auto mb-8" />
+    <h2>ONLINE <span className="span">TEACHING</span></h2>
+    <p>
+      I conduct live virtual coding classes and mentoring sessions for teens and adults, using Zoom, recorded lessons, and guided materials to teach web development from anywhere.
+    </p>
+  </div>
+
+  {/* ONSITE TEACHING */}
+  <div className="serviceContent" data-aos="zoom-in" data-aos-duration="1000">
+    <FaCode className="span text-[40px] text-center mx-auto mb-8" />
+    <h2><span className="span">ONSITE</span> TEACHING</h2>
+    <p>
+      I organize physical coding bootcamps and workshops for kids, teens, and adults, teaching HTML, CSS, JavaScript, and more with hands-on support and project-based learning.
+    </p>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -213,10 +216,10 @@ const modeToggle = () =>{
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-5 my-12 md:px-16">
   {/* Project Items */}
   {[ 
-    { link: "https://jerry2272.github.io/jerryshoppingmoore", image: Ecom },
+    { link: "https://www.pgslng.com/", image: proTech },
     { link: "https://vilox-six.vercel.app", image: Vilox },
     { link: "https://jerry2272.github.io/iccef_programme.github/", image: Iccef },
-    { link: "https://kelis-int-ng.vercel.app", image: Kelis },
+    { link: "https://greenparkintegrated.com/", image: greenPark },
     { link: "https://jerry2272.github.io/speechConverter", image: Speech },
     { link: "https://jerry2272.github.io/search-images.api/", image: Search }
   ].map((project, index) => (
